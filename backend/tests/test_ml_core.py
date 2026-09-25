@@ -228,6 +228,45 @@ def test_archive_climatology_uses_training_split_only():
     )
 
 
+def test_climatology_reports_ensemble_spread_not_lead_day():
+    """`mean_ensemble_spread_mm` must summarise the ensemble-spread column.
+
+    Regression test. `derive_regional_climatology` previously resolved the wrong
+    feature column and wrote the mean *lead day* into this key. The bug was
+    invisible because both columns produce values in a similar numeric range and
+    the payload still looked plausible. The expected value is recomputed here
+    directly from the feature matrix, so picking the wrong column cannot pass.
+    """
+    built = archive.build_archive(n_samples=4000, seed=11)
+    train_idx = built["train_idx"]
+
+    spread_col = list(archive.ARCHIVE_FEATURES).index("ensemble_spread_std")
+    lead_col = list(archive.ARCHIVE_FEATURES).index("lead_day")
+    X_train = built["X"][train_idx]
+    region_train = built["region_idx"][train_idx]
+
+    stats = archive.derive_regional_climatology(
+        region_idx=region_train,
+        bust_labels=built["y_bust"][train_idx],
+        abs_errors=built["y_abs_error"][train_idx],
+        X=X_train,
+        lead_days=built["lead_day"][train_idx],
+    )
+
+    for idx, region in enumerate(REGIONS):
+        mask = region_train == idx
+        if not np.any(mask):
+            continue
+
+        reported = stats[region["grid_id"]]["mean_ensemble_spread_mm"]
+        expected_spread = float(X_train[mask, spread_col].mean())
+        wrong_value = float(X_train[mask, lead_col].mean())
+
+        assert reported == pytest.approx(expected_spread, abs=5e-4)
+        # Direct regression guard: this is the value the defect produced.
+        assert reported != pytest.approx(wrong_value, abs=5e-4)
+
+
 def test_training_report_skill_is_positive():
     skill = ml_engine.training_report["classifier_skill"]
     assert skill["roc_auc"] > 0.65

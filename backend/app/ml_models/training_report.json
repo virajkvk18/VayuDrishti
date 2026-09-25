@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-25T19:45:01.799443+00:00",
+  "generated_utc": "2026-09-25T20:42:46.670829+00:00",
   "model_version": "3.0.0",
   "target": {
     "definition": "24h accumulated precipitation verification bust",
@@ -262,7 +262,7 @@
       "hist_mae_p90_mm": 63.97,
       "worst_lead_day": 9,
       "peak_event": "Western Disturbance",
-      "mean_ensemble_spread_mm": 5.417,
+      "mean_ensemble_spread_mm": 8.973,
       "archive_samples": 2139,
       "per_lead_bust_rate_pct": [
         23.33,
@@ -283,7 +283,7 @@
       "hist_mae_p90_mm": 50.27,
       "worst_lead_day": 10,
       "peak_event": "Western Disturbance",
-      "mean_ensemble_spread_mm": 5.611,
+      "mean_ensemble_spread_mm": 9.634,
       "archive_samples": 2172,
       "per_lead_bust_rate_pct": [
         6.8,
@@ -304,7 +304,7 @@
       "hist_mae_p90_mm": 57.03,
       "worst_lead_day": 10,
       "peak_event": "Monsoon Active/Break Phase",
-      "mean_ensemble_spread_mm": 5.563,
+      "mean_ensemble_spread_mm": 10.141,
       "archive_samples": 2093,
       "per_lead_bust_rate_pct": [
         11.94,
@@ -325,7 +325,7 @@
       "hist_mae_p90_mm": 38.29,
       "worst_lead_day": 10,
       "peak_event": "Heat Wave",
-      "mean_ensemble_spread_mm": 5.574,
+      "mean_ensemble_spread_mm": 9.137,
       "archive_samples": 2095,
       "per_lead_bust_rate_pct": [
         1.52,
@@ -346,7 +346,7 @@
       "hist_mae_p90_mm": 40.43,
       "worst_lead_day": 10,
       "peak_event": "Cyclonic System (ARB)",
-      "mean_ensemble_spread_mm": 5.509,
+      "mean_ensemble_spread_mm": 10.419,
       "archive_samples": 2041,
       "per_lead_bust_rate_pct": [
         5.32,
@@ -367,7 +367,7 @@
       "hist_mae_p90_mm": 45.46,
       "worst_lead_day": 10,
       "peak_event": "Monsoon Depression",
-      "mean_ensemble_spread_mm": 5.51,
+      "mean_ensemble_spread_mm": 10.288,
       "archive_samples": 2043,
       "per_lead_bust_rate_pct": [
         8.42,
@@ -388,7 +388,7 @@
       "hist_mae_p90_mm": 53.46,
       "worst_lead_day": 10,
       "peak_event": "Heat Wave / Dryline",
-      "mean_ensemble_spread_mm": 5.517,
+      "mean_ensemble_spread_mm": 10.226,
       "archive_samples": 2048,
       "per_lead_bust_rate_pct": [
         7.91,
@@ -409,7 +409,7 @@
       "hist_mae_p90_mm": 61.64,
       "worst_lead_day": 10,
       "peak_event": "Monsoon Depression",
-      "mean_ensemble_spread_mm": 5.522,
+      "mean_ensemble_spread_mm": 10.864,
       "archive_samples": 2204,
       "per_lead_bust_rate_pct": [
         16.0,
@@ -430,7 +430,7 @@
       "hist_mae_p90_mm": 70.59,
       "worst_lead_day": 10,
       "peak_event": "Monsoon Depression / BoB Low",
-      "mean_ensemble_spread_mm": 5.404,
+      "mean_ensemble_spread_mm": 10.97,
       "archive_samples": 2000,
       "per_lead_bust_rate_pct": [
         21.63,
@@ -451,7 +451,7 @@
       "hist_mae_p90_mm": 77.52,
       "worst_lead_day": 10,
       "peak_event": "Orographic Heavy Rainfall",
-      "mean_ensemble_spread_mm": 5.597,
+      "mean_ensemble_spread_mm": 11.478,
       "archive_samples": 2105,
       "per_lead_bust_rate_pct": [
         24.88,
@@ -472,7 +472,7 @@
       "hist_mae_p90_mm": 111.42,
       "worst_lead_day": 8,
       "peak_event": "Orographic Extreme Rainfall",
-      "mean_ensemble_spread_mm": 5.555,
+      "mean_ensemble_spread_mm": 11.792,
       "archive_samples": 2157,
       "per_lead_bust_rate_pct": [
         51.89,
@@ -493,7 +493,7 @@
       "hist_mae_p90_mm": 76.88,
       "worst_lead_day": 9,
       "peak_event": "Cyclonic System (ARB)",
-      "mean_ensemble_spread_mm": 5.536,
+      "mean_ensemble_spread_mm": 11.295,
       "archive_samples": 2089,
       "per_lead_bust_rate_pct": [
         26.8,
@@ -514,7 +514,7 @@
       "hist_mae_p90_mm": 92.61,
       "worst_lead_day": 10,
       "peak_event": "Active Monsoon / Southwest Surge",
-      "mean_ensemble_spread_mm": 5.443,
+      "mean_ensemble_spread_mm": 11.35,
       "archive_samples": 2182,
       "per_lead_bust_rate_pct": [
         37.65,
@@ -535,7 +535,7 @@
       "hist_mae_p90_mm": 48.82,
       "worst_lead_day": 10,
       "peak_event": "Monsoon Active/Break Phase",
-      "mean_ensemble_spread_mm": 5.603,
+      "mean_ensemble_spread_mm": 10.081,
       "archive_samples": 2089,
       "per_lead_bust_rate_pct": [
         5.47,
@@ -556,7 +556,7 @@
       "hist_mae_p90_mm": 62.37,
       "worst_lead_day": 10,
       "peak_event": "Northeast Monsoon Cyclone",
-      "mean_ensemble_spread_mm": 5.483,
+      "mean_ensemble_spread_mm": 10.932,
       "archive_samples": 2122,
       "per_lead_bust_rate_pct": [
         16.97,
@@ -577,7 +577,7 @@
       "hist_mae_p90_mm": 85.46,
       "worst_lead_day": 8,
       "peak_event": "Cyclone / Monsoon Depression (BoB)",
-      "mean_ensemble_spread_mm": 5.521,
+      "mean_ensemble_spread_mm": 11.589,
       "archive_samples": 2114,
       "per_lead_bust_rate_pct": [
         27.54,
@@ -598,7 +598,7 @@
       "hist_mae_p90_mm": 73.54,
       "worst_lead_day": 10,
       "peak_event": "Tropical Cyclogenesis (BoB)",
-      "mean_ensemble_spread_mm": 5.571,
+      "mean_ensemble_spread_mm": 12.036,
       "archive_samples": 2098,
       "per_lead_bust_rate_pct": [
         21.83,
@@ -619,7 +619,7 @@
       "hist_mae_p90_mm": 66.43,
       "worst_lead_day": 9,
       "peak_event": "Arabian Sea Cyclone / Somali Jet Surge",
-      "mean_ensemble_spread_mm": 5.503,
+      "mean_ensemble_spread_mm": 11.155,
       "archive_samples": 2110,
       "per_lead_bust_rate_pct": [
         15.81,
@@ -640,7 +640,7 @@
       "hist_mae_p90_mm": 50.37,
       "worst_lead_day": 10,
       "peak_event": "Equatorial Wave / ITCZ Disruption",
-      "mean_ensemble_spread_mm": 5.431,
+      "mean_ensemble_spread_mm": 10.619,
       "archive_samples": 2031,
       "per_lead_bust_rate_pct": [
         10.9,
@@ -661,7 +661,7 @@
       "hist_mae_p90_mm": 31.77,
       "worst_lead_day": 10,
       "peak_event": "Western Disturbance",
-      "mean_ensemble_spread_mm": 5.512,
+      "mean_ensemble_spread_mm": 8.763,
       "archive_samples": 2068,
       "per_lead_bust_rate_pct": [
         3.47,

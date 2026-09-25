@@ -275,7 +275,7 @@ def derive_regional_climatology(
     archive rather than hand-authored, the number the dashboard shows against a
     live forecast is a genuine like-for-like comparison.
     """
-    lead_col = list(ARCHIVE_FEATURES).index("lead_day")
+    spread_col = list(ARCHIVE_FEATURES).index("ensemble_spread_std")
     climatology: Dict[str, Dict[str, Any]] = {}
 
     for idx, region in enumerate(REGIONS):
@@ -287,7 +287,7 @@ def derive_regional_climatology(
         region_busts = bust_labels[mask]
         region_errors = abs_errors[mask]
         region_leads = lead_days[mask]
-        region_spread = X[mask, lead_col]
+        region_spread = X[mask, spread_col]
 
         per_lead_rate = []
         for day in range(settings.LEAD_DAY_MIN, settings.LEAD_DAY_MAX + 1):
