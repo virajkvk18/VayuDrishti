@@ -5,6 +5,12 @@
 *.pem
 *.key
 
+# --- Tool scratch space ---
+# Local agent/tool worktrees. These are nested git repos, so git will not recurse
+# into them anyway, but ignoring the directory stops a stray copy of the project
+# (including its .env) from ever being staged.
+.kilo/
+
 # --- Python ---
 __pycache__/
 *.py[cod]
