@@ -1,0 +1,685 @@
+{
+  "generated_utc": "2026-09-25T19:45:01.799443+00:00",
+  "model_version": "3.0.0",
+  "target": {
+    "definition": "24h accumulated precipitation verification bust",
+    "error_threshold_mm": 25.0,
+    "regressor_target_transform": "sqrt"
+  },
+  "archive": {
+    "n_samples": 60000,
+    "seed": 20260926,
+    "n_regions": 20,
+    "n_train": 42000,
+    "n_val": 9000,
+    "n_test": 9000,
+    "train_bust_rate": 0.3872,
+    "test_bust_rate": 0.3937,
+    "provenance": "synthetic proxy for the NCMRWF verification archive"
+  },
+  "classifier_skill": {
+    "roc_auc": 0.7108,
+    "roc_auc_cluster_ci90": [
+      0.6876,
+      0.7327
+    ],
+    "brier_score": 0.20791,
+    "brier_skill_score": 0.12897,
+    "log_loss": 0.60012,
+    "expected_calibration_error": 0.00795,
+    "sharpness_std_of_probability": 0.1763,
+    "validation_roc_auc": 0.7037,
+    "reliability": [
+      {
+        "bin_lower": 0.0,
+        "bin_upper": 0.1,
+        "n_cases": 645,
+        "mean_forecast_probability": 0.0672,
+        "observed_bust_frequency": 0.076
+      },
+      {
+        "bin_lower": 0.1,
+        "bin_upper": 0.2,
+        "n_cases": 884,
+        "mean_forecast_probability": 0.1382,
+        "observed_bust_frequency": 0.1357
+      },
+      {
+        "bin_lower": 0.2,
+        "bin_upper": 0.3,
+        "n_cases": 1491,
+        "mean_forecast_probability": 0.2522,
+        "observed_bust_frequency": 0.273
+      },
+      {
+        "bin_lower": 0.3,
+        "bin_upper": 0.4,
+        "n_cases": 1315,
+        "mean_forecast_probability": 0.3498,
+        "observed_bust_frequency": 0.3551
+      },
+      {
+        "bin_lower": 0.4,
+        "bin_upper": 0.5,
+        "n_cases": 1521,
+        "mean_forecast_probability": 0.4462,
+        "observed_bust_frequency": 0.4451
+      },
+      {
+        "bin_lower": 0.5,
+        "bin_upper": 0.6,
+        "n_cases": 2281,
+        "mean_forecast_probability": 0.542,
+        "observed_bust_frequency": 0.5454
+      },
+      {
+        "bin_lower": 0.6,
+        "bin_upper": 0.7,
+        "n_cases": 699,
+        "mean_forecast_probability": 0.6393,
+        "observed_bust_frequency": 0.6595
+      },
+      {
+        "bin_lower": 0.7,
+        "bin_upper": 0.8,
+        "n_cases": 162,
+        "mean_forecast_probability": 0.7315,
+        "observed_bust_frequency": 0.7222
+      },
+      {
+        "bin_lower": 0.8,
+        "bin_upper": 0.9,
+        "n_cases": 2,
+        "mean_forecast_probability": 0.8421,
+        "observed_bust_frequency": 0.5
+      },
+      {
+        "bin_lower": 0.9,
+        "bin_upper": 1.0,
+        "n_cases": 0,
+        "mean_forecast_probability": null,
+        "observed_bust_frequency": null
+      }
+    ],
+    "skill_by_lead_day": {
+      "day_1": {
+        "n_cases": 900,
+        "bust_rate": 0.1889,
+        "roc_auc": 0.7166,
+        "brier": 0.14005,
+        "brier_skill_score": 0.08593,
+        "mean_forecast_probability": 0.1854,
+        "observed_bust_frequency": 0.1889
+      },
+      "day_2": {
+        "n_cases": 874,
+        "bust_rate": 0.2048,
+        "roc_auc": 0.6854,
+        "brier": 0.15338,
+        "brier_skill_score": 0.05824,
+        "mean_forecast_probability": 0.2139,
+        "observed_bust_frequency": 0.2048
+      },
+      "day_3": {
+        "n_cases": 868,
+        "bust_rate": 0.265,
+        "roc_auc": 0.7045,
+        "brier": 0.17491,
+        "brier_skill_score": 0.10192,
+        "mean_forecast_probability": 0.2719,
+        "observed_bust_frequency": 0.265
+      },
+      "day_4": {
+        "n_cases": 873,
+        "bust_rate": 0.3288,
+        "roc_auc": 0.6796,
+        "brier": 0.20205,
+        "brier_skill_score": 0.08441,
+        "mean_forecast_probability": 0.3129,
+        "observed_bust_frequency": 0.3288
+      },
+      "day_5": {
+        "n_cases": 854,
+        "bust_rate": 0.3548,
+        "roc_auc": 0.6433,
+        "brier": 0.21577,
+        "brier_skill_score": 0.05745,
+        "mean_forecast_probability": 0.3686,
+        "observed_bust_frequency": 0.3548
+      },
+      "day_6": {
+        "n_cases": 923,
+        "bust_rate": 0.4377,
+        "roc_auc": 0.6531,
+        "brier": 0.22846,
+        "brier_skill_score": 0.07174,
+        "mean_forecast_probability": 0.4233,
+        "observed_bust_frequency": 0.4377
+      },
+      "day_7": {
+        "n_cases": 913,
+        "bust_rate": 0.4589,
+        "roc_auc": 0.5945,
+        "brier": 0.24347,
+        "brier_skill_score": 0.01951,
+        "mean_forecast_probability": 0.4611,
+        "observed_bust_frequency": 0.4589
+      },
+      "day_8": {
+        "n_cases": 955,
+        "bust_rate": 0.5236,
+        "roc_auc": 0.6028,
+        "brier": 0.24122,
+        "brier_skill_score": 0.03297,
+        "mean_forecast_probability": 0.5082,
+        "observed_bust_frequency": 0.5236
+      },
+      "day_9": {
+        "n_cases": 892,
+        "bust_rate": 0.5617,
+        "roc_auc": 0.6296,
+        "brier": 0.23503,
+        "brier_skill_score": 0.04538,
+        "mean_forecast_probability": 0.5366,
+        "observed_bust_frequency": 0.5617
+      },
+      "day_10": {
+        "n_cases": 948,
+        "bust_rate": 0.5802,
+        "roc_auc": 0.5914,
+        "brier": 0.23781,
+        "brier_skill_score": 0.02365,
+        "mean_forecast_probability": 0.5593,
+        "observed_bust_frequency": 0.5802
+      }
+    }
+  },
+  "regressor_skill": {
+    "mae_mm": 19.085,
+    "rmse_mm": 33.052,
+    "climatology_mae_mm": 22.437,
+    "r2": 0.1006,
+    "skill_vs_climatology_pct": 14.94
+  },
+  "feature_schema": {
+    "slp_hpa": {
+      "unit": "hPa",
+      "description": "Mean sea-level pressure"
+    },
+    "precipitable_water_mm": {
+      "unit": "mm",
+      "description": "Column precipitable water (PWAT)"
+    },
+    "wind_shear_divergence": {
+      "unit": "1e-5 s-1",
+      "description": "850-200 hPa deep-tropospheric shear magnitude"
+    },
+    "temp_gradient_k": {
+      "unit": "K km-1",
+      "description": "850-500 hPa vertical lapse rate"
+    },
+    "cape_j_kg": {
+      "unit": "J kg-1",
+      "description": "Convective available potential energy"
+    },
+    "geopotential_anomaly_m": {
+      "unit": "m",
+      "description": "500 hPa geopotential height anomaly"
+    },
+    "rh_700_pct": {
+      "unit": "%",
+      "description": "700 hPa relative humidity"
+    },
+    "surface_wind_knots": {
+      "unit": "kt",
+      "description": "10 m wind speed"
+    },
+    "nwp_forecast_precip_mm": {
+      "unit": "mm",
+      "description": "NWP 24h accumulated precipitation forecast"
+    },
+    "ensemble_spread_std": {
+      "unit": "mm",
+      "description": "Ensemble spread of 24h accumulated precipitation"
+    },
+    "lead_day": {
+      "unit": "day",
+      "description": "Forecast lead time"
+    },
+    "hist_bust_freq_pct": {
+      "unit": "%",
+      "description": "Regional historical bust frequency"
+    },
+    "hist_mae_mm": {
+      "unit": "mm",
+      "description": "Regional historical mean absolute error"
+    }
+  },
+  "regional_climatology": {
+    "IND-NW-01": {
+      "hist_bust_freq_pct": 41.94,
+      "hist_mean_abs_err_mm": 28.76,
+      "hist_mae_p90_mm": 63.97,
+      "worst_lead_day": 9,
+      "peak_event": "Western Disturbance",
+      "mean_ensemble_spread_mm": 5.417,
+      "archive_samples": 2139,
+      "per_lead_bust_rate_pct": [
+        23.33,
+        30.92,
+        30.0,
+        35.65,
+        42.99,
+        44.88,
+        49.51,
+        51.02,
+        58.06,
+        56.4
+      ]
+    },
+    "IND-NW-02": {
+      "hist_bust_freq_pct": 29.83,
+      "hist_mean_abs_err_mm": 22.25,
+      "hist_mae_p90_mm": 50.27,
+      "worst_lead_day": 10,
+      "peak_event": "Western Disturbance",
+      "mean_ensemble_spread_mm": 5.611,
+      "archive_samples": 2172,
+      "per_lead_bust_rate_pct": [
+        6.8,
+        9.95,
+        13.41,
+        16.59,
+        28.87,
+        32.2,
+        39.29,
+        46.82,
+        45.91,
+        51.77
+      ]
+    },
+    "IND-NC-03": {
+      "hist_bust_freq_pct": 36.07,
+      "hist_mean_abs_err_mm": 25.47,
+      "hist_mae_p90_mm": 57.03,
+      "worst_lead_day": 10,
+      "peak_event": "Monsoon Active/Break Phase",
+      "mean_ensemble_spread_mm": 5.563,
+      "archive_samples": 2093,
+      "per_lead_bust_rate_pct": [
+        11.94,
+        18.46,
+        22.37,
+        29.95,
+        34.33,
+        41.94,
+        45.92,
+        45.68,
+        50.96,
+        56.5
+      ]
+    },
+    "IND-W-04": {
+      "hist_bust_freq_pct": 20.95,
+      "hist_mean_abs_err_mm": 16.52,
+      "hist_mae_p90_mm": 38.29,
+      "worst_lead_day": 10,
+      "peak_event": "Heat Wave",
+      "mean_ensemble_spread_mm": 5.574,
+      "archive_samples": 2095,
+      "per_lead_bust_rate_pct": [
+        1.52,
+        4.08,
+        8.53,
+        9.71,
+        18.14,
+        26.57,
+        25.93,
+        33.78,
+        36.7,
+        41.36
+      ]
+    },
+    "IND-W-05": {
+      "hist_bust_freq_pct": 22.49,
+      "hist_mean_abs_err_mm": 18.27,
+      "hist_mae_p90_mm": 40.43,
+      "worst_lead_day": 10,
+      "peak_event": "Cyclonic System (ARB)",
+      "mean_ensemble_spread_mm": 5.509,
+      "archive_samples": 2041,
+      "per_lead_bust_rate_pct": [
+        5.32,
+        7.27,
+        9.77,
+        11.27,
+        15.23,
+        23.98,
+        25.24,
+        33.33,
+        43.93,
+        48.8
+      ]
+    },
+    "IND-C-06": {
+      "hist_bust_freq_pct": 29.66,
+      "hist_mean_abs_err_mm": 21.07,
+      "hist_mae_p90_mm": 45.46,
+      "worst_lead_day": 10,
+      "peak_event": "Monsoon Depression",
+      "mean_ensemble_spread_mm": 5.51,
+      "archive_samples": 2043,
+      "per_lead_bust_rate_pct": [
+        8.42,
+        12.5,
+        16.91,
+        21.43,
+        27.0,
+        36.54,
+        34.9,
+        44.39,
+        43.28,
+        50.88
+      ]
+    },
+    "IND-C-07": {
+      "hist_bust_freq_pct": 30.47,
+      "hist_mean_abs_err_mm": 23.14,
+      "hist_mae_p90_mm": 53.46,
+      "worst_lead_day": 10,
+      "peak_event": "Heat Wave / Dryline",
+      "mean_ensemble_spread_mm": 5.517,
+      "archive_samples": 2048,
+      "per_lead_bust_rate_pct": [
+        7.91,
+        14.48,
+        18.92,
+        24.87,
+        24.23,
+        33.82,
+        44.23,
+        41.46,
+        44.88,
+        49.08
+      ]
+    },
+    "IND-E-08": {
+      "hist_bust_freq_pct": 40.52,
+      "hist_mean_abs_err_mm": 27.42,
+      "hist_mae_p90_mm": 61.64,
+      "worst_lead_day": 10,
+      "peak_event": "Monsoon Depression",
+      "mean_ensemble_spread_mm": 5.522,
+      "archive_samples": 2204,
+      "per_lead_bust_rate_pct": [
+        16.0,
+        22.87,
+        26.7,
+        28.9,
+        37.13,
+        48.95,
+        52.51,
+        47.85,
+        60.09,
+        62.21
+      ]
+    },
+    "IND-E-09": {
+      "hist_bust_freq_pct": 44.45,
+      "hist_mean_abs_err_mm": 31.13,
+      "hist_mae_p90_mm": 70.59,
+      "worst_lead_day": 10,
+      "peak_event": "Monsoon Depression / BoB Low",
+      "mean_ensemble_spread_mm": 5.404,
+      "archive_samples": 2000,
+      "per_lead_bust_rate_pct": [
+        21.63,
+        27.57,
+        36.84,
+        37.39,
+        47.88,
+        57.28,
+        53.33,
+        57.89,
+        50.25,
+        59.38
+      ]
+    },
+    "IND-NE-10": {
+      "hist_bust_freq_pct": 46.98,
+      "hist_mean_abs_err_mm": 35.61,
+      "hist_mae_p90_mm": 77.52,
+      "worst_lead_day": 10,
+      "peak_event": "Orographic Heavy Rainfall",
+      "mean_ensemble_spread_mm": 5.597,
+      "archive_samples": 2105,
+      "per_lead_bust_rate_pct": [
+        24.88,
+        29.44,
+        34.43,
+        40.69,
+        49.15,
+        43.97,
+        52.56,
+        64.06,
+        60.78,
+        67.21
+      ]
+    },
+    "IND-NE-11": {
+      "hist_bust_freq_pct": 64.16,
+      "hist_mean_abs_err_mm": 50.9,
+      "hist_mae_p90_mm": 111.42,
+      "worst_lead_day": 8,
+      "peak_event": "Orographic Extreme Rainfall",
+      "mean_ensemble_spread_mm": 5.555,
+      "archive_samples": 2157,
+      "per_lead_bust_rate_pct": [
+        51.89,
+        52.89,
+        52.61,
+        62.24,
+        60.35,
+        65.52,
+        66.81,
+        77.37,
+        76.47,
+        75.2
+      ]
+    },
+    "IND-W-12": {
+      "hist_bust_freq_pct": 48.54,
+      "hist_mean_abs_err_mm": 35.3,
+      "hist_mae_p90_mm": 76.88,
+      "worst_lead_day": 9,
+      "peak_event": "Cyclonic System (ARB)",
+      "mean_ensemble_spread_mm": 5.536,
+      "archive_samples": 2089,
+      "per_lead_bust_rate_pct": [
+        26.8,
+        34.0,
+        33.66,
+        49.53,
+        48.58,
+        52.04,
+        58.62,
+        56.87,
+        62.56,
+        59.24
+      ]
+    },
+    "IND-SW-13": {
+      "hist_bust_freq_pct": 56.6,
+      "hist_mean_abs_err_mm": 42.74,
+      "hist_mae_p90_mm": 92.61,
+      "worst_lead_day": 10,
+      "peak_event": "Active Monsoon / Southwest Surge",
+      "mean_ensemble_spread_mm": 5.443,
+      "archive_samples": 2182,
+      "per_lead_bust_rate_pct": [
+        37.65,
+        41.09,
+        43.17,
+        53.33,
+        56.48,
+        65.04,
+        62.33,
+        63.96,
+        70.39,
+        74.64
+      ]
+    },
+    "IND-S-14": {
+      "hist_bust_freq_pct": 30.16,
+      "hist_mean_abs_err_mm": 21.65,
+      "hist_mae_p90_mm": 48.82,
+      "worst_lead_day": 10,
+      "peak_event": "Monsoon Active/Break Phase",
+      "mean_ensemble_spread_mm": 5.603,
+      "archive_samples": 2089,
+      "per_lead_bust_rate_pct": [
+        5.47,
+        6.53,
+        16.58,
+        19.7,
+        23.0,
+        35.62,
+        37.5,
+        48.26,
+        50.25,
+        52.02
+      ]
+    },
+    "IND-SE-15": {
+      "hist_bust_freq_pct": 41.56,
+      "hist_mean_abs_err_mm": 29.18,
+      "hist_mae_p90_mm": 62.37,
+      "worst_lead_day": 10,
+      "peak_event": "Northeast Monsoon Cyclone",
+      "mean_ensemble_spread_mm": 5.483,
+      "archive_samples": 2122,
+      "per_lead_bust_rate_pct": [
+        16.97,
+        21.08,
+        34.96,
+        35.75,
+        38.38,
+        44.78,
+        51.94,
+        56.46,
+        56.16,
+        59.55
+      ]
+    },
+    "IND-E-16": {
+      "hist_bust_freq_pct": 52.03,
+      "hist_mean_abs_err_mm": 38.47,
+      "hist_mae_p90_mm": 85.46,
+      "worst_lead_day": 8,
+      "peak_event": "Cyclone / Monsoon Depression (BoB)",
+      "mean_ensemble_spread_mm": 5.521,
+      "archive_samples": 2114,
+      "per_lead_bust_rate_pct": [
+        27.54,
+        40.09,
+        48.51,
+        37.44,
+        57.22,
+        57.56,
+        61.43,
+        64.59,
+        62.05,
+        64.11
+      ]
+    },
+    "IND-M-17": {
+      "hist_bust_freq_pct": 47.09,
+      "hist_mean_abs_err_mm": 33.97,
+      "hist_mae_p90_mm": 73.54,
+      "worst_lead_day": 10,
+      "peak_event": "Tropical Cyclogenesis (BoB)",
+      "mean_ensemble_spread_mm": 5.571,
+      "archive_samples": 2098,
+      "per_lead_bust_rate_pct": [
+        21.83,
+        26.42,
+        28.86,
+        39.11,
+        50.68,
+        56.68,
+        52.24,
+        60.49,
+        57.21,
+        73.49
+      ]
+    },
+    "IND-M-18": {
+      "hist_bust_freq_pct": 41.0,
+      "hist_mean_abs_err_mm": 29.06,
+      "hist_mae_p90_mm": 66.43,
+      "worst_lead_day": 9,
+      "peak_event": "Arabian Sea Cyclone / Somali Jet Surge",
+      "mean_ensemble_spread_mm": 5.503,
+      "archive_samples": 2110,
+      "per_lead_bust_rate_pct": [
+        15.81,
+        22.37,
+        31.71,
+        31.52,
+        36.53,
+        47.73,
+        50.65,
+        55.5,
+        61.54,
+        56.76
+      ]
+    },
+    "IND-S-19": {
+      "hist_bust_freq_pct": 31.51,
+      "hist_mean_abs_err_mm": 22.88,
+      "hist_mae_p90_mm": 50.37,
+      "worst_lead_day": 10,
+      "peak_event": "Equatorial Wave / ITCZ Disruption",
+      "mean_ensemble_spread_mm": 5.431,
+      "archive_samples": 2031,
+      "per_lead_bust_rate_pct": [
+        10.9,
+        10.53,
+        18.37,
+        30.0,
+        27.67,
+        37.13,
+        37.06,
+        47.18,
+        48.73,
+        50.51
+      ]
+    },
+    "IND-N-20": {
+      "hist_bust_freq_pct": 15.67,
+      "hist_mean_abs_err_mm": 14.19,
+      "hist_mae_p90_mm": 31.77,
+      "worst_lead_day": 10,
+      "peak_event": "Western Disturbance",
+      "mean_ensemble_spread_mm": 5.512,
+      "archive_samples": 2068,
+      "per_lead_bust_rate_pct": [
+        3.47,
+        4.27,
+        7.25,
+        7.66,
+        14.71,
+        17.6,
+        18.42,
+        25.0,
+        25.78,
+        32.28
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.14.7",
+    "scikit_learn": "1.9.0",
+    "numpy": "2.5.2"
+  }
+}

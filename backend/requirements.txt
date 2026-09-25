@@ -1,0 +1,24 @@
+# VayuDRISHTI backend dependencies
+#
+#   python -m pip install -r requirements.txt
+#
+# The trained model artifacts are committed under app/ml_models/, so a fresh
+# clone serves predictions without running the training pipeline. To retrain:
+#   python -m app.core.train
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+
+# --- Modelling ---
+numpy>=1.26.0
+scikit-learn>=1.4.0
+joblib>=1.3.0
+
+# --- Optional: AI synoptic briefing (disabled by default via ENABLE_AI_BRIEFING) ---
+google-genai>=1.0.0
+
+# --- Testing ---
+pytest>=8.0.0
+httpx>=0.27.0
